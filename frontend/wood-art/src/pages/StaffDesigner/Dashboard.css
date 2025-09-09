@@ -1,0 +1,102 @@
+/* StaffDesigner Dashboard Main Layout Styles */
+.staffdesigner-dashboard-root {
+  display: flex;
+  min-height: calc(100vh - 70px);
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.staffdesigner-sidebar {
+  width: 280px;
+  background: linear-gradient(180deg, #6f42c1 0%, #8e44ad 100%);
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  z-index: 999;
+  font-family: Arial, sans-serif;
+}
+
+.staffdesigner-sidebar .sidebar-header {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staffdesigner-sidebar .sidebar-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.staffdesigner-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.staffdesigner-sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.staffdesigner-sidebar li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.staffdesigner-sidebar li.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+}
+
+.staffdesigner-sidebar .menu-icon {
+  margin-right: 12px;
+  font-size: 16px;
+  width: 20px;
+}
+
+/* Main Content Area */
+.staffdesigner-dashboard-main {
+  flex: 1;
+  margin-left: 280px;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Global Title Style for All Sections */
+.staffdesigner-dashboard-title {
+  color: #6f42c1;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .staffdesigner-sidebar {
+    width: 100%;
+    transform: translateX(-100%);
+  }
+  
+  .staffdesigner-sidebar.closed {
+    transform: translateX(-100%);
+  }
+  
+  .staffdesigner-dashboard-main {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .staffdesigner-sidebar.closed + .staffdesigner-dashboard-main {
+    margin-left: 0;
+  }
+}

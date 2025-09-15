@@ -98,16 +98,18 @@
 .stock-table th {
   background: #f8f9fa;
   padding: 15px 12px;
-  text-align: left;
+  text-align: center;
   font-weight: 600;
   color: #333;
   border-bottom: 2px solid #dee2e6;
+  vertical-align: middle;
 }
 
 .stock-table td {
   padding: 12px;
   border-bottom: 1px solid #dee2e6;
   vertical-align: middle;
+  text-align: center;
 }
 
 .stock-table tbody tr:hover {
@@ -176,4 +178,10 @@
   border-radius: 8px;
   margin-top: 14px;
   font-size: 14px;
+}
+
+.price-cell {
+  font-weight: 600;
+  color: #e67e22;
+  text-align: center !important;
 }

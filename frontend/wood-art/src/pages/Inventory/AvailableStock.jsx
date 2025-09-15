@@ -10,7 +10,8 @@ export default function AvailableStock({
   resetStock,
   loadStockItems,
   onStockFilterChange,
-  setStockFilter
+  setStockFilter,
+  updateStockPrices
 }) {
   return (
     <div className="raw-available">
@@ -19,6 +20,7 @@ export default function AvailableStock({
         <div className="header-actions">
           <button className="primary-btn" onClick={initializeStock}>Initialize Stock</button>
           <button className="secondary-btn" onClick={resetStock}>Reset Stock</button>
+          <button className="secondary-btn" onClick={updateStockPrices} disabled={stockLoading}>Update Prices</button>
           <button className="refresh-btn" onClick={loadStockItems} disabled={stockLoading}>↻ Refresh</button>
         </div>
       </div>
@@ -80,6 +82,7 @@ export default function AvailableStock({
                 <th>Size</th>
                 <th>Thickness</th>
                 <th>Color</th>
+                <th>Price</th>
                 <th>Available Quantity</th>
                 <th>Re-order Level</th>
                 <th>Status</th>
@@ -95,6 +98,7 @@ export default function AvailableStock({
                     <td>{item.boardSize}</td>
                     <td>{item.thickness}</td>
                     <td>{item.color}</td>
+                    <td className="price-cell">Rs. {item.price || 0}</td>
                     <td>{item.availableQuantity}</td>
                     <td>{item.reorderLevel}</td>
                     <td>
@@ -112,7 +116,7 @@ export default function AvailableStock({
             </tbody>
           </table>
           <div className="table-summary">
-            <p>Showing {stockItems.length} combinations | Total Quantity: {stockItems.reduce((sum, item) => sum + item.availableQuantity, 0)}</p>
+            <p>Showing {stockItems.length} combinations | Total Quantity: {stockItems.reduce((sum, item) => sum + item.availableQuantity, 0)} | Total Value: Rs. {stockItems.reduce((sum, item) => sum + ((item.price || 0) * item.availableQuantity), 0).toLocaleString()}</p>
           </div>
         </div>
       )}

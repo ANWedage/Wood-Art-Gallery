@@ -1,0 +1,137 @@
+/* Stock Alerts Styles */
+.stock-alerts {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Low Stock Alerts Styles */
+.low-stock-content {
+  padding: 20px;
+}
+
+.alert-summary {
+  margin-bottom: 30px;
+}
+
+.alert-card {
+  background: linear-gradient(135deg, #ff6b6b, #ffa500);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.alert-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.alert-count {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.low-stock-table-wrapper {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.stock-table th {
+  background: #f8f9fa;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.stock-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+  color: #666;
+}
+
+.stock-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.stock-table tbody tr.out-of-stock {
+  background: #fff5f5;
+}
+
+.stock-table tbody tr.low-stock {
+  background: #fff8e7;
+}
+
+.quantity-cell {
+  font-weight: bold;
+  color: #ff4444;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.status-badge.status-critical {
+  background: #ff4444;
+  color: white;
+  animation: blink 1.5s infinite;
+}
+
+.status-badge.status-warning {
+  background: #ffa500;
+  color: white;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.5; }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #28a745;
+  font-size: 18px;
+}
+
+.empty-state p {
+  margin: 0;
+}
+
+/* Loading and error states */
+.loading-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.error-state {
+  background: #ffe8e8;
+  color: #c00;
+  padding: 14px 16px;
+  border: 1px solid #ffc2c2;
+  border-radius: 8px;
+  margin-top: 14px;
+  font-size: 14px;
+}

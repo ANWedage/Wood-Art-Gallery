@@ -1,0 +1,166 @@
+/* Purchase Orders Styles */
+.marketplace-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.refresh-btn {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.refresh-btn:hover:not(:disabled) {
+  background: #fafafa;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Purchase Order Table */
+.po-table-wrapper { 
+  margin-top: 18px; 
+  background: #fff; 
+  border: 1px solid #e5e5e5; 
+  border-radius: 12px; 
+  overflow: auto; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+}
+
+.po-table { 
+  width: 100%; 
+  border-collapse: separate; 
+  border-spacing: 0; 
+  font-size: 14px; 
+}
+
+.po-table thead th { 
+  background: #fafafa; 
+  position: sticky; 
+  top: 0; 
+  text-align: left; 
+  font-weight: 600; 
+  color: #444; 
+  padding: 14px 16px; 
+  border-bottom: 1px solid #e3e3e3; 
+}
+
+.po-table tbody td { 
+  padding: 12px 16px; 
+  border-bottom: 1px solid #f0f0f0; 
+  vertical-align: top; 
+}
+
+.po-table tbody tr:last-child td { 
+  border-bottom: none; 
+}
+
+.po-table tbody tr.deleting-row td {
+  opacity: 0.5;
+}
+
+.status-badge { 
+  display: inline-block; 
+  padding: 4px 10px; 
+  border-radius: 20px; 
+  font-size: 11px; 
+  font-weight: 600; 
+  letter-spacing: .5px; 
+  text-transform: uppercase; 
+}
+
+.status-pending { 
+  background: #fff4e5; 
+  color: #b26b00; 
+}
+
+.status-approved { 
+  background: #e6f4ff; 
+  color: #005b96; 
+}
+
+.status-ordered { 
+  background: #ede7f6; 
+  color: #5e35b1; 
+}
+
+.status-received { 
+  background: #e8f5e9; 
+  color: #2e7d32; 
+}
+
+.status-cancelled { 
+  background: #ffebee; 
+  color: #c62828; 
+}
+
+.status-complete { 
+  color: #2e7d32; 
+  font-size: 16px; 
+  font-weight: 700; 
+  display: inline-block; 
+  padding: 2px 4px; 
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(19,132,150,.3);
+  transition: .18s;
+}
+
+.edit-btn.small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.edit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #138496, #0f6674);
+}
+
+.edit-btn:disabled {
+  opacity: .6;
+  cursor: default;
+}
+
+.loading-state {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+}
+
+.error-state {
+  background: #ffe8e8;
+  color: #c00;
+  padding: 14px 16px;
+  border: 1px solid #ffc2c2;
+  border-radius: 8px;
+  margin-top: 14px;
+  font-size: 14px;
+}

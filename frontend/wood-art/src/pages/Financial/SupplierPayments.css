@@ -1,0 +1,243 @@
+.supplier-payments {
+  padding: 20px;
+  margin: 0;
+}
+
+.supplier-payments-title {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.supplier-payments-description {
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* Search header */
+.payments-table-header {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 340px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Table */
+.payments-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e6ed;
+}
+
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.payments-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.payments-table th,
+.payments-table td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e6ed;
+  font-size: 14px;
+}
+
+.payments-table th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.payments-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.payments-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(40, 167, 69, 0.2);
+  color: #008000 !important;
+}
+
+/* Price highlighting */
+.price-highlight {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.transaction-id {
+  font-family: 'Courier New', monospace;
+  background: #f8f9fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  border: 1px solid #e0e6ed;
+}
+
+/* Table Summary */
+.table-summary {
+  padding: 15px 20px;
+  background: #f8f9fa;
+  border-top: 1px solid #e0e6ed;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.total-amount {
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.total-amount strong {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Page Header */
+.page-header {
+  margin-bottom: 25px;
+}
+
+.page-title {
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+/* Loading and error states */
+.loading-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 18px;
+  color: #667eea;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e6ed;
+}
+
+.error-state {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+  font-size: 16px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e6ed;
+}
+
+.empty-state p {
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .supplier-payments {
+    padding: 15px;
+  }
+  
+  .payments-table-container {
+    overflow-x: auto;
+  }
+  
+  .payments-table {
+    min-width: 800px;
+  }
+  
+  .payments-table th,
+  .payments-table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  
+  .summary-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .total-amount {
+    font-size: 15px;
+  }
+  
+  .total-amount strong {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .supplier-payments-title {
+    font-size: 24px;
+  }
+  
+  .payments-table th,
+  .payments-table td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+  
+  .status-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  
+  .transaction-id {
+    font-size: 11px;
+  }
+}

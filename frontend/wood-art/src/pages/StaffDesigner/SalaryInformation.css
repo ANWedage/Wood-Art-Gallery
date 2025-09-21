@@ -1,0 +1,315 @@
+/* Salary Information Styles */
+.salary-information {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.salary-information p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.loading-state,
+.error-state {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.error-state {
+  color: #dc3545;
+}
+
+.no-salary-data {
+  text-align: center;
+  padding: 3rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.no-salary-data p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Salary Records List */
+.salary-records-section {
+  margin-bottom: 2rem;
+}
+
+.salary-records-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.salary-records-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.salary-record-item {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.salary-record-item:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+}
+
+.salary-record-item.active {
+  border-color: #007bff;
+  background: #e3f2fd;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.record-month {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.record-net-salary {
+  font-weight: 700;
+  color: #28a745;
+  font-size: 1.2rem;
+}
+
+.record-date {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Salary Report */
+.salary-report-section {
+  margin-top: 2rem;
+}
+
+.salary-report {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.salary-report-header {
+  text-align: center;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.salary-report-header h2 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.report-period {
+  color: #6c757d;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+
+.staff-info,
+.earnings-section,
+.deductions-section,
+.net-salary-section,
+.transaction-info {
+  margin-bottom: 1.5rem;
+}
+
+.earnings-section h3,
+.deductions-section h3 {
+  color: #495057;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row .label {
+  font-weight: 500;
+  color: #495057;
+  flex: 1;
+}
+
+.info-row .value {
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: right;
+}
+
+.info-row .amount {
+  font-family: 'Courier New', monospace;
+  color: #28a745;
+}
+
+.info-row.total {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+  margin-top: 0.5rem;
+}
+
+.info-row.final {
+  background: #d4edda;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 2px solid #28a745;
+  margin-top: 1rem;
+}
+
+.info-row.final .label,
+.info-row.final .value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #155724;
+}
+
+.transaction-id {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #6c757d;
+  word-break: break-all;
+}
+
+/* Report Actions */
+.report-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.report-btn {
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  min-width: 130px;
+  justify-content: center;
+}
+
+.pdf-btn {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.pdf-btn:hover {
+  background: linear-gradient(135deg, #c82333, #a71e2a);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+.csv-btn {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.csv-btn:hover {
+  background: linear-gradient(135deg, #218838, #1ea585);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.report-btn:active {
+  transform: translateY(0);
+}
+
+.pdf-btn:active {
+  box-shadow: 0 2px 6px rgba(220, 53, 69, 0.3);
+}
+
+.csv-btn:active {
+  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.3);
+}
+
+.report-icon {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .salary-information {
+    padding: 1rem;
+  }
+
+  .salary-records-list {
+    grid-template-columns: 1fr;
+  }
+
+  .salary-report {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .info-row .value {
+    text-align: left;
+  }
+
+  .report-btn {
+    flex: 1;
+    min-width: unset;
+  }
+
+  .report-actions {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

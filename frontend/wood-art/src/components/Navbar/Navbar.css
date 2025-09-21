@@ -391,7 +391,7 @@ body {
    ============================== */
 
 .delivery-navbar {
-  background: linear-gradient(135deg, #fd7e14 0%, #f39c12 100%);
+  background: linear-gradient(135deg, #645f5b 0%, #8b8b8b 100%);
 }
 
 .delivery-navbar .logo-section {
@@ -401,14 +401,14 @@ body {
 }
 
 .delivery-badge {
-  background: #fd7e14;
+  background: #645f5b;
   color: white;
   padding: 8px 16px;
   border-radius: 0 20px 20px 0;
   font-weight: bold;
   font-size: 14px;
   margin-right: 10px;
-  box-shadow: 0 2px 8px rgba(253, 126, 20, 0.3);
+  box-shadow: 0 2px 8px rgba(100, 95, 91, 0.3);
 }
 
 .delivery-logo {
@@ -432,18 +432,18 @@ body {
 }
 
 .delivery-greeting-highlight {
-  background: linear-gradient(135deg, #fd7e14, #f39c12);
+  background: linear-gradient(135deg, #645f5b, #8b8b8b);
   color: white;
   font-weight: 600;
   padding: 8px 18px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(253, 126, 20, 0.3);
-  border: 1px solid rgba(253, 126, 20, 0.2);
+  box-shadow: 0 2px 8px rgba(100, 95, 91, 0.3);
+  border: 1px solid rgba(100, 95, 91, 0.2);
 }
 
 .delivery-logout {
   background: #ecf0f1;
-  color: #fd7e14;
+  color: #645f5b;
   border: none;
   border-radius: 8px;
   padding: 10px 20px;

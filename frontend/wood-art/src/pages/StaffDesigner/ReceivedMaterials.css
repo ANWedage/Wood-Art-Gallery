@@ -1,0 +1,259 @@
+/* Staff Designer Received Materials Styles */
+.sd-received-materials {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.sd-received-materials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sd-dashboard-title {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  background: #8e44ad;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sd-refresh-btn {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: #495057;
+}
+
+.sd-refresh-btn:hover:not(:disabled) {
+  background: #f8f9fa;
+  border-color: #8b4513;
+  color: #8b4513;
+}
+
+.sd-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+/* Loading and Error States */
+.sd-loading-state,
+.sd-error-state {
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  background: #fff;
+  border-radius: 12px;
+  margin: 2rem 0;
+  border: 1px solid #e9ecef;
+}
+
+.sd-error-state {
+  color: #dc3545;
+  border-color: #f5c6cb;
+  background: #f8d7da;
+}
+
+/* Empty State */
+.sd-empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.sd-empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #8b4513;
+}
+
+.sd-empty-state h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.sd-empty-state p {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Materials Table */
+.sd-materials-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.sd-materials-table-wrapper {
+  overflow-x: auto;
+}
+
+.sd-materials-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.sd-materials-table thead {
+  background: #8e44ad;
+}
+
+.sd-materials-table th {
+  padding: 1rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.sd-materials-table td {
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.sd-material-row {
+  transition: background-color 0.3s ease;
+}
+
+.sd-material-row:hover {
+  background-color: #f8f9fa;
+}
+
+
+
+/* Material Info */
+.sd-material-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Color Badge */
+.sd-color-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Quantity Badge */
+.sd-quantity-badge {
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid #bbdefb;
+}
+
+/* Notes */
+.sd-notes-text {
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.sd-no-notes {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+/* Date Info */
+.sd-date-info {
+  color: #495057;
+}
+
+.sd-date-main {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Released By Info */
+.sd-released-by-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.sd-released-by-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.sd-released-by-role {
+  color: #6c757d;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sd-received-materials {
+    padding: 1rem;
+  }
+  
+  .sd-dashboard-title {
+    font-size: 2rem;
+  }
+  
+  .sd-materials-table th,
+  .sd-materials-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .sd-materials-table {
+    font-size: 0.8rem;
+  }
+  
+  .sd-received-materials-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .sd-refresh-btn {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .sd-dashboard-title {
+    font-size: 1.75rem;
+  }
+  
+  .sd-materials-table th,
+  .sd-materials-table td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+  }
+}

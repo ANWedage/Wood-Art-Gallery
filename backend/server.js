@@ -160,12 +160,7 @@ stockEmitter.on('designUpdated', (designData) => {
   broadcastToClients('designUpdated', designData);
 });
 
-// Start server (only in non-serverless environment)
-if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-}
-
-// Export app for Vercel
-module.exports = app;
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

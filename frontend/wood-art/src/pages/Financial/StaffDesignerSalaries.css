@@ -137,14 +137,14 @@
 }
 
 .gross-salary {
-  background-color: #e8f5e8;
-  color: #155724;
+  background-color: #e3f2fd;
+  color: #1976d2;
   font-weight: 600;
 }
 
 .net-salary {
-  background-color: #d4edda;
-  color: #155724;
+  background-color: #bbdefb;
+  color: #1976d2;
   font-weight: 600;
 }
 
@@ -291,7 +291,7 @@
 }
 
 .submit-btn {
-  background: #28a745;
+  background: #3498db;
   color: white;
   border: none;
   padding: 0.875rem 2rem;
@@ -303,7 +303,7 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #218838;
+  background: #2980b9;
 }
 
 .submit-btn:disabled {

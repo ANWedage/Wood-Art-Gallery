@@ -318,7 +318,7 @@ body {
    ============================== */
 
 .financial-navbar {
-  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
 }
 
 .financial-navbar .logo-section {
@@ -328,14 +328,14 @@ body {
 }
 
 .financial-badge {
-  background: #27ae60;
+  background: #3498db;
   color: white;
   padding: 8px 16px;
   border-radius: 0 20px 20px 0;
   font-weight: bold;
   font-size: 14px;
   margin-right: 10px;
-  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
 }
 
 .financial-logo {
@@ -359,18 +359,18 @@ body {
 }
 
 .financial-greeting-highlight {
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   color: white;
   font-weight: 600;
   padding: 8px 18px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
-  border: 1px solid rgba(39, 174, 96, 0.2);
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+  border: 1px solid rgba(52, 152, 219, 0.2);
 }
 
 .financial-logout {
   background: #ecf0f1;
-  color: #27ae60;
+  color: #3498db;
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -464,7 +464,7 @@ body {
    ============================== */
 
 .staffdesigner-navbar {
-  background: linear-gradient(135deg, #6f42c1 0%, #8e44ad 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
 }
 
 .staffdesigner-navbar .logo-section {
@@ -474,14 +474,14 @@ body {
 }
 
 .staffdesigner-badge {
-  background: #6f42c1;
+  background: #3498db;
   color: white;
   padding: 8px 16px;
   border-radius: 0 20px 20px 0;
   font-weight: bold;
   font-size: 14px;
   margin-right: 10px;
-  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
 }
 
 .staffdesigner-logo {
@@ -505,18 +505,18 @@ body {
 }
 
 .staffdesigner-greeting-highlight {
-  background: linear-gradient(135deg, #6f42c1, #8e44ad);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   color: white;
   font-weight: 600;
   padding: 8px 18px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
-  border: 1px solid rgba(111, 66, 193, 0.2);
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+  border: 1px solid rgba(52, 152, 219, 0.2);
 }
 
 .staffdesigner-logout {
   background: #ecf0f1;
-  color: #6f42c1;
+  color: #3498db;
   border: none;
   border-radius: 8px;
   padding: 10px 20px;

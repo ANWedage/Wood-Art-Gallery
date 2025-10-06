@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #e8e4f7 0%, #d4c7f0 50%, #c5b3e8 100%);
+  background: linear-gradient(135deg, #ebf3fd 0%, #d6eaf8 50%, #aed6f1 100%);
 }
 
 .hero-background {
@@ -29,15 +29,15 @@
   background: 
     repeating-linear-gradient(
       90deg,
-      rgba(111, 66, 193, 0.05) 0px,
-      rgba(111, 66, 193, 0.05) 2px,
+      rgba(52, 152, 219, 0.05) 0px,
+      rgba(52, 152, 219, 0.05) 2px,
       transparent 2px,
       transparent 8px
     ),
     repeating-linear-gradient(
       0deg,
-      rgba(111, 66, 193, 0.03) 0px,
-      rgba(111, 66, 193, 0.03) 1px,
+      rgba(52, 152, 219, 0.03) 0px,
+      rgba(52, 152, 219, 0.03) 1px,
       transparent 1px,
       transparent 4px
     );
@@ -51,9 +51,9 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 20%, rgba(142, 68, 173, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 40%, rgba(111, 66, 193, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 40% 80%, rgba(142, 68, 173, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 20%, rgba(52, 152, 219, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 40%, rgba(44, 62, 80, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(52, 152, 219, 0.08) 0%, transparent 50%);
   animation: customGlow 8s ease-in-out infinite alternate;
 }
 
@@ -84,10 +84,10 @@
   top: 50%;
   width: 200px;
   height: 3px;
-  background: linear-gradient(90deg, transparent 0%, #8e44ad 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #3498db 50%, transparent 100%);
   transform: translateY(-50%);
   animation: craftScan 4s ease-in-out infinite;
-  box-shadow: 0 0 10px rgba(142, 68, 173, 0.6);
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.6);
 }
 
 .craft-beam-effect:first-child {
@@ -108,9 +108,9 @@
 .hero-title {
   font-size: 4rem;
   font-weight: 900;
-  color: #6f42c1;
+  color: #3498db;
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(111, 66, 193, 0.3);
+  text-shadow: 2px 2px 4px rgba(52, 152, 219, 0.3);
   letter-spacing: 2px;
   line-height: 1.1;
 }
@@ -118,13 +118,13 @@
 .title-line-1 {
   display: block;
   font-size: 0.8em;
-  color: #8e44ad;
+  color: #2c3e50;
   animation: titlePulse 5s ease-in-out infinite alternate;
 }
 
 .title-line-2 {
   display: block;
-  background: linear-gradient(45deg, #6f42c1, #8e44ad, #9b59b6);
+  background: linear-gradient(45deg, #3498db, #2c3e50, #34495e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -132,8 +132,8 @@
 }
 
 @keyframes titlePulse {
-  0% { text-shadow: 0 0 5px rgba(142, 68, 173, 0.5); }
-  100% { text-shadow: 0 0 20px rgba(142, 68, 173, 0.8), 0 0 30px rgba(142, 68, 173, 0.6); }
+  0% { text-shadow: 0 0 5px rgba(52, 152, 219, 0.5); }
+  100% { text-shadow: 0 0 20px rgba(52, 152, 219, 0.8), 0 0 30px rgba(52, 152, 219, 0.6); }
 }
 
 @keyframes titleShimmer {
@@ -161,10 +161,10 @@
   position: relative;
   overflow: hidden;
   box-shadow: 
-    0 10px 30px rgba(111, 66, 193, 0.15),
-    0 1px 8px rgba(111, 66, 193, 0.1);
+    0 10px 30px rgba(52, 152, 219, 0.15),
+    0 1px 8px rgba(52, 152, 219, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(111, 66, 193, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.1);
 }
 
 .description-card::before {
@@ -174,7 +174,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #8e44ad, #9b59b6, #8e44ad);
+  background: linear-gradient(90deg, #3498db, #2c3e50, #3498db);
   animation: cardGlow 3s ease-in-out infinite;
 }
 
@@ -186,21 +186,21 @@
 .description-card:hover {
   transform: translateY(-5px);
   box-shadow: 
-    0 20px 40px rgba(111, 66, 193, 0.2),
-    0 10px 20px rgba(111, 66, 193, 0.15);
+    0 20px 40px rgba(52, 152, 219, 0.2),
+    0 10px 20px rgba(52, 152, 219, 0.15);
 }
 
 .card-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #6f42c1, #8e44ad);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
   color: white;
-  box-shadow: 0 4px 15px rgba(111, 66, 193, 0.4);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
 }
 
 .card-icon svg {
@@ -211,7 +211,7 @@
 .description-card h3 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #6f42c1;
+  color: #3498db;
   margin: 0 0 1rem 0;
   letter-spacing: 0.5px;
 }
@@ -219,7 +219,7 @@
 .description-card p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #4a3c7a;
+  color: #2c3e50;
   margin: 0;
   opacity: 0.9;
 }
@@ -268,25 +268,25 @@
 }
 
 .action-btn.primary {
-  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   color: white;
-  box-shadow: 0 4px 20px rgba(142, 68, 173, 0.4);
+  box-shadow: 0 4px 20px rgba(52, 152, 219, 0.4);
 }
 
 .action-btn.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(142, 68, 173, 0.6);
+  box-shadow: 0 8px 30px rgba(52, 152, 219, 0.6);
 }
 
 .action-btn.secondary {
-  background: linear-gradient(135deg, #6f42c1, #8e44ad);
+  background: linear-gradient(135deg, #2c3e50, #34495e);
   color: white;
-  box-shadow: 0 4px 20px rgba(111, 66, 193, 0.4);
+  box-shadow: 0 4px 20px rgba(44, 62, 80, 0.4);
 }
 
 .action-btn.secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(111, 66, 193, 0.6);
+  box-shadow: 0 8px 30px rgba(44, 62, 80, 0.6);
 }
 
 .btn-icon {
@@ -317,9 +317,9 @@
 .stat-number {
   font-size: 2.5rem;
   font-weight: 900;
-  color: #6f42c1;
+  color: #3498db;
   margin-bottom: 0.5rem;
-  background: linear-gradient(45deg, #6f42c1, #8e44ad);
+  background: linear-gradient(45deg, #3498db, #2c3e50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -329,7 +329,7 @@
 .stat-label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #4a3c7a;
+  color: #2c3e50;
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0.8;
@@ -337,7 +337,7 @@
 
 @keyframes statBounce {
   0% { filter: brightness(1); }
-  100% { filter: brightness(1.4) drop-shadow(0 0 8px rgba(111, 66, 193, 0.6)); }
+  100% { filter: brightness(1.4) drop-shadow(0 0 8px rgba(52, 152, 219, 0.6)); }
 }
 
 /* ============================================
@@ -401,7 +401,7 @@
 
 /* Legacy styles for compatibility */
 .staffdesigner-dashboard-title {
-  color: #6f42c1;
+  color: #3498db;
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: 600;

@@ -54,7 +54,7 @@
 }
 
 .payments-table thead {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #3498db;
   color: white;
 }
 
@@ -95,7 +95,7 @@
 
 /* Price highlighting */
 .price-highlight {
-  color: #27ae60;
+  color: #3498db;
   font-weight: 700;
   font-size: 15px;
 }
@@ -130,7 +130,7 @@
 }
 
 .total-amount strong {
-  color: #28a745;
+  color: #3498db;
   font-size: 18px;
   font-weight: 700;
 }

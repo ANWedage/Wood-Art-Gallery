@@ -167,11 +167,11 @@
 }
 
 .delivery-table tbody tr.released-row {
-  background-color: #f0f8f0;
+  background-color: #e3f2fd;
 }
 
 .delivery-table tbody tr.released-row:hover {
-  background-color: #e8f5e8;
+  background-color: #bbdefb;
 }
 
 .delivery-table tbody tr:last-child td {
@@ -207,7 +207,7 @@
 
 .cost-amount {
   font-weight: 700;
-  color: #27ae60;
+  color: #3498db;
   font-size: 16px;
 }
 
@@ -235,7 +235,7 @@
 }
 
 .released-badge {
-  background: #27ae60;
+  background: #3498db;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;

@@ -7,7 +7,7 @@
 
 .financial-sidebar {
   width: 280px;
-  background: linear-gradient(180deg, #27ae60 0%, #2ecc71 100%);
+  background: linear-gradient(180deg, #3498db 0%, #2c3e50 100%);
   color: white;
   position: fixed;
   left: 0;
@@ -93,7 +93,7 @@
 }
 
 .financial-dashboard-title {
-  color: #27ae60;
+  color: #3498db;
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -141,7 +141,7 @@
   margin: 0;
   font-size: 32px;
   font-weight: bold;
-  color: #27ae60;
+  color: #3498db;
 }
 
 .financial-stat-card.revenue .stat-amount {
@@ -153,7 +153,7 @@
 }
 
 .financial-stat-card.profit .stat-amount {
-  color: #27ae60;
+  color: #3498db;
 }
 
 .financial-stat-card.invoices .stat-amount {
@@ -192,7 +192,7 @@
 
 .slip-header h3 {
   margin: 0;
-  color: #27ae60;
+  color: #3498db;
   font-size: 18px;
 }
 
@@ -225,7 +225,7 @@
 
 .info-row strong {
   min-width: 140px;
-  color: #27ae60;
+  color: #3498db;
 }
 
 .slip-actions {
@@ -261,7 +261,7 @@
 }
 
 .approve-btn {
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -273,9 +273,9 @@
 }
 
 .approve-btn:hover {
-  background: linear-gradient(135deg, #229954, #27ae60);
+  background: linear-gradient(135deg, #2980b9, #34495e);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
 .deny-btn {
@@ -304,7 +304,7 @@
 }
 
 .loading {
-  color: #27ae60;
+  color: #3498db;
 }
 
 .no-data {

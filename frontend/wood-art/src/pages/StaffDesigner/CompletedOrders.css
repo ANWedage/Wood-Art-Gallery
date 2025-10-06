@@ -30,8 +30,8 @@
 }
 
 .search-input:focus {
-  border-color: #6f42c1;
-  box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.1);
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .empty-state {
@@ -72,7 +72,7 @@
 }
 
 .completed-order-card {
-  border-left: 4px solid #6f42c1;
+  border-left: 4px solid #3498db;
 }
 
 .order-header {
@@ -99,7 +99,7 @@
 }
 
 .order-status.completed {
-  background: #6f42c1;
+  background: #3498db;
   color: white;
 }
 
@@ -111,7 +111,7 @@
 .customer-info h4,
 .order-specifications h4 {
   margin: 0 0 8px 0;
-  color: #6f42c1;
+  color: #3498db;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -163,7 +163,7 @@
 
 .order-image h4 {
   margin: 0 0 8px 0;
-  color: #6f42c1;
+  color: #3498db;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;

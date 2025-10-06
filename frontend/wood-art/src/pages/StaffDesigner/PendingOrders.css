@@ -7,7 +7,7 @@
 }
 
 .staffdesigner-dashboard-title {
-  color: #6f42c1;
+  color: #3498db;
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -97,7 +97,7 @@
 .customer-info h4,
 .order-specifications h4 {
   margin: 0 0 8px 0;
-  color: #6f42c1;
+  color: #3498db;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -116,7 +116,7 @@
 
 .order-image h4 {
   margin: 0 0 8px 0;
-  color: #6f42c1;
+  color: #3498db;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;

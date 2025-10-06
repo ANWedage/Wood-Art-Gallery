@@ -21,11 +21,11 @@
   background: #f8f9fa;
   padding: 20px;
   border-radius: 8px;
-  border-left: 4px solid #6f42c1;
+  border-left: 4px solid #3498db;
 }
 
 .profile-info h3 {
-  color: #6f42c1;
+  color: #3498db;
   margin-bottom: 10px;
 }
 

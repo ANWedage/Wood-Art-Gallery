@@ -177,6 +177,22 @@
   font-size: 16px;
 }
 
+.payment-table20 thead tr th{
+
+  background: #338dcb;
+  padding: 10px;
+  width: 40%;
+}
+.payment-table20 tbody tr td{
+
+ padding-left: 20px;
+ 
+ 
+}
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .payment-section {

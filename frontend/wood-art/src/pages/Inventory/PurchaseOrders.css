@@ -41,6 +41,11 @@
   font-size: 14px; 
 }
 
+.po-table thead tr th{
+  background: #3287c0;
+  color: white;
+}
+
 .po-table thead th { 
   background: #fafafa; 
   position: sticky; 

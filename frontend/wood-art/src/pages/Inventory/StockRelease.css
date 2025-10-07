@@ -24,6 +24,11 @@
   border-collapse: collapse;
 }
 
+.stock-release-table thead tr th{
+  background: #3287c0;
+  color: white;
+}
+
 .stock-release-table th {
   background: #f8f9fa;
   padding: 12px;

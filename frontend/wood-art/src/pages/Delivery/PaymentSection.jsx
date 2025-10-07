@@ -123,7 +123,7 @@ export default function PaymentSection() {
         </div>
       ) : (
         <div className="payment-table-wrapper">
-          <table className="payment-table">
+          <table className="payment-table20">
             <thead>
               <tr>
                 <th>Order ID</th>

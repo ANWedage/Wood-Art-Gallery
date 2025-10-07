@@ -142,7 +142,7 @@
 }
 
 .delivery-table thead th {
-  background: #2c3e50;
+  background: #3498db;
   color: white;
   padding: 1.2rem 1rem;
   text-align: left;
@@ -167,11 +167,11 @@
 }
 
 .delivery-table tbody tr.released-row {
-  background-color: #e3f2fd;
+  background-color: white;
 }
 
 .delivery-table tbody tr.released-row:hover {
-  background-color: #bbdefb;
+  background-color: #f8f9fa;
 }
 
 .delivery-table tbody tr:last-child td {
@@ -188,7 +188,6 @@
 
 .order-type-badge {
   padding: 0.25rem 0.75rem;
-  border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;

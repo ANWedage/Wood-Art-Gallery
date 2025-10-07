@@ -132,7 +132,7 @@ export default function Suppliers({
                     type="number" 
                     name="quantity" 
                     min="1" 
-                    max="100"
+                    max="1000"
                     value={poForm.quantity} 
                     onChange={(e) => {
                       const value = parseInt(e.target.value);
@@ -140,13 +140,13 @@ export default function Suppliers({
                         alert('Quantity must be at least 1');
                         return;
                       }
-                      if (value > 100) {
-                        alert('Quantity cannot exceed 100');
+                      if (value > 1000) {
+                        alert('Quantity cannot exceed 1000');
                         return;
                       }
                       onPOChange(e);
                     }}
-                    placeholder="Enter quantity (1-100)"
+                    placeholder="Enter quantity (1-1000)"
                     required 
                   />
                 </div>

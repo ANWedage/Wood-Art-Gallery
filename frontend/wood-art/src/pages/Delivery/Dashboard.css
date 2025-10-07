@@ -7,7 +7,7 @@
 
 .delivery-sidebar {
   width: 280px;
-  background: linear-gradient(135deg, #645f5b 0%, #8b8b8b 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
   color: white;
   position: fixed;
   left: 0;
@@ -93,7 +93,7 @@
 }
 
 .delivery-dashboard-title {
-  color: #645f5b;
+  color: #3498db;
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -103,7 +103,7 @@
    Enhanced Delivery Overview Styles
    ============================================ */
 .delivery-overview {
-  background: linear-gradient(135deg, #fff8f2 0%, #fff4e6 100%);
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
   min-height: calc(100vh - 140px);
   padding: 0;
   border-radius: 12px;
@@ -111,7 +111,7 @@
 }
 
 .overview-header {
-  background: linear-gradient(135deg, #645f5b, #8b8b8b);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   padding: 2rem;
   color: white;
   position: relative;
@@ -231,7 +231,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #645f5b, #8b8b8b, #645f5b);
+  background: linear-gradient(90deg, #3498db, #2c3e50, #3498db);
   animation: cardShimmer 3s ease-in-out infinite;
 }
 
@@ -272,7 +272,7 @@
 .stat-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #645f5b, #8b8b8b);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -289,7 +289,7 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #645f5b, #8b8b8b);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   border-radius: 16px;
   animation: iconPulse 2s ease-in-out infinite;
   z-index: 1;
@@ -319,15 +319,15 @@
 }
 
 .stat-amount.success {
-  color: #059669;
+  color: #3498db;
 }
 
 .stat-amount.warning {
-  color: #d97706;
+  color: #f39c12;
 }
 
 .stat-amount.info {
-  color: #0ea5e9;
+  color: #2980b9;
 }
 
 .counter {
@@ -421,7 +421,7 @@
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(135deg, #645f5b, #8b8b8b);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   border-radius: 2px;
 }
 
@@ -463,9 +463,9 @@
 }
 
 .action-btn.primary {
-  background: linear-gradient(135deg, #645f5b, #8b8b8b);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   color: white;
-  box-shadow: 0 4px 16px rgba(100, 95, 91, 0.3);
+  box-shadow: 0 4px 16px rgba(52, 152, 219, 0.3);
 }
 
 .action-btn.primary:hover {
@@ -509,7 +509,7 @@
    Status Button Styles for Tables
    ============================================ */
 .item-picked-button {
-  background: linear-gradient(135deg, #645f5b, #8b8b8b);
+  background: linear-gradient(135deg, #3498db, #2c3e50);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -518,13 +518,13 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(100, 95, 91, 0.2);
+  box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
 }
 
 .item-picked-button:hover {
-  background: linear-gradient(135deg, #8b8b8b, #645f5b);
+  background: linear-gradient(135deg, #2980b9, #34495e);
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(100, 95, 91, 0.3);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
 }
 
 .collect-cash-btn {
@@ -632,7 +632,7 @@
 
 .marketplace-table thead,
 .custom-orders-table thead {
-  background: linear-gradient(135deg, #645f5b 0%, #8b8b8b 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
   color: white;
 }
 
@@ -748,7 +748,7 @@
 
 /* Additional table styling */
 .marketplace-table2 thead {
-  background: linear-gradient(135deg, #645f5b 0%, #8b8b8b 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
   color: white;
 }
 

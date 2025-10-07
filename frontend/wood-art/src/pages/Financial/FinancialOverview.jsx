@@ -232,14 +232,20 @@ export default function FinancialOverview() {
       doc.text(reportNo, (pageWidth - reportNoWidth) / 2, yPos);
       yPos += 12;
 
-      // Income Section - More visible
+      // Horizontal layout for Income and Expenses - Side by side
+      const sectionStartY = yPos;
+      const sectionWidth = (contentWidth - 6) / 2; // Split available width with small gap
+      const incomeStartX = leftMargin;
+      const expensesStartX = leftMargin + sectionWidth + 6;
+      
+      // Income Section (Left side)
       doc.setFillColor(44, 62, 80);
-      doc.rect(leftMargin, yPos - 3, contentWidth, 8, 'F');
+      doc.rect(incomeStartX, yPos - 3, sectionWidth, 8, 'F');
       doc.setTextColor(255, 255, 255);
       doc.setFontSize(11);
       doc.setFont(undefined, 'bold');
-      doc.text('INCOME', leftMargin + 3, yPos + 2);
-      yPos += 10;
+      doc.text('INCOME', incomeStartX + 3, yPos + 2);
+      let incomeYPos = yPos + 10;
 
       // Income table - Better readability
       const incomeData = [
@@ -254,25 +260,24 @@ export default function FinancialOverview() {
         // Add alternating background for better readability
         if (index % 2 === 0) {
           doc.setFillColor(248, 249, 250);
-          doc.rect(leftMargin, yPos - 2, contentWidth, 5, 'F');
+          doc.rect(incomeStartX, incomeYPos - 2, sectionWidth, 5, 'F');
         }
         
         doc.setFont(undefined, index === incomeData.length - 1 ? 'bold' : 'normal');
-        doc.text(row[0], leftMargin + 3, yPos);
+        doc.text(row[0], incomeStartX + 3, incomeYPos);
         const amountWidth = doc.getTextWidth(row[1]);
-        doc.text(row[1], pageWidth - rightMargin - 3 - amountWidth, yPos);
-        yPos += 5;
+        doc.text(row[1], incomeStartX + sectionWidth - 3 - amountWidth, incomeYPos);
+        incomeYPos += 5;
       });
-      yPos += 8;
 
-      // Expenses Section - More visible
+      // Expenses Section (Right side)
       doc.setFillColor(44, 62, 80);
-      doc.rect(leftMargin, yPos - 3, contentWidth, 8, 'F');
+      doc.rect(expensesStartX, yPos - 3, sectionWidth, 8, 'F');
       doc.setTextColor(255, 255, 255);
       doc.setFontSize(11);
       doc.setFont(undefined, 'bold');
-      doc.text('EXPENSES', leftMargin + 3, yPos + 2);
-      yPos += 10;
+      doc.text('EXPENSES', expensesStartX + 3, yPos + 2);
+      let expensesYPos = yPos + 10;
 
       // Expenses table - Better readability
       const expensesData = [
@@ -289,16 +294,18 @@ export default function FinancialOverview() {
         // Add alternating background for better readability
         if (index % 2 === 0) {
           doc.setFillColor(248, 249, 250);
-          doc.rect(leftMargin, yPos - 2, contentWidth, 5, 'F');
+          doc.rect(expensesStartX, expensesYPos - 2, sectionWidth, 5, 'F');
         }
         
         doc.setFont(undefined, index === expensesData.length - 1 ? 'bold' : 'normal');
-        doc.text(row[0], leftMargin + 3, yPos);
+        doc.text(row[0], expensesStartX + 3, expensesYPos);
         const amountWidth = doc.getTextWidth(row[1]);
-        doc.text(row[1], pageWidth - rightMargin - 3 - amountWidth, yPos);
-        yPos += 5;
+        doc.text(row[1], expensesStartX + sectionWidth - 3 - amountWidth, expensesYPos);
+        expensesYPos += 5;
       });
-      yPos += 10;
+
+      // Set yPos to the maximum of both sections plus spacing
+      yPos = Math.max(incomeYPos, expensesYPos) + 10;
 
       // Net Profit Box - More prominent and visible
       const profitColor = financialData.netProfit >= 0 ? [40, 167, 69] : [220, 53, 69];

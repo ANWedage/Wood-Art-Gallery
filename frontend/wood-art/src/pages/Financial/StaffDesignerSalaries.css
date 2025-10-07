@@ -93,12 +93,12 @@
 }
 
 .salaries-table th {
-  background: #f8f9fa;
+  background: #3498db;
   border-bottom: 2px solid #dee2e6;
   padding: 1rem 0.75rem;
   text-align: left;
   font-weight: 600;
-  color: #495057;
+  color: white;
   white-space: nowrap;
   font-size: 0.85rem;
   line-height: 1.2;
@@ -154,6 +154,19 @@
   color: #6c757d;
   max-width: 120px;
   word-break: break-all;
+}
+
+/* Fixed salary display */
+.fixed-salary-display {
+  background: #e3f2fd;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1976d2;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 /* Modal Styles */

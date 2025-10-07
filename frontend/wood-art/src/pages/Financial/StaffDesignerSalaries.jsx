@@ -17,7 +17,7 @@ export default function StaffDesignerSalaries() {
     staffDesignerEmail: '',
     year: '',
     month: '',
-    basicSalary: '',
+    basicSalary: '30000', // Fixed basic salary
     allowances: '',
     taxPercentage: '',
     loanInstallments: ''
@@ -103,16 +103,15 @@ export default function StaffDesignerSalaries() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    // Handle numeric fields
-    if (['basicSalary', 'allowances', 'taxPercentage', 'loanInstallments'].includes(name)) {
+    // Handle numeric fields (excluding basicSalary which is now fixed)
+    if (['allowances', 'taxPercentage', 'loanInstallments'].includes(name)) {
       // Only allow numbers
       if (value && !/^\d*\.?\d*$/.test(value)) return;
       
       // Apply specific validations
-      if (name === 'basicSalary' && parseFloat(value) > 200000) return;
       if (name === 'taxPercentage' && parseFloat(value) > 100) return;
-      if (name === 'loanInstallments' && formData.basicSalary && parseFloat(value) > parseFloat(formData.basicSalary)) {
-        alert('Loan installment cannot exceed basic salary');
+      if (name === 'loanInstallments' && parseFloat(value) > 30000) {
+        alert('Loan installment cannot exceed basic salary (Rs. 30,000)');
         return;
       }
     }
@@ -166,8 +165,8 @@ export default function StaffDesignerSalaries() {
     
     // Validate required fields
     if (!formData.staffDesignerName || !formData.staffDesignerEmail || 
-        !formData.year || !formData.month || !formData.basicSalary) {
-      alert('Please fill all required fields: Staff Name, Email, Year, Month, and Basic Salary');
+        !formData.year || !formData.month) {
+      alert('Please fill all required fields: Staff Name, Email, Year, and Month');
       return;
     }
 
@@ -206,7 +205,7 @@ export default function StaffDesignerSalaries() {
           staffDesignerEmail: '',
           year: '',
           month: '',
-          basicSalary: '',
+          basicSalary: '30000', // Reset to fixed amount
           allowances: '',
           taxPercentage: '',
           loanInstallments: ''
@@ -271,7 +270,7 @@ export default function StaffDesignerSalaries() {
       staffDesignerEmail: '',
       year: '',
       month: '',
-      basicSalary: '',
+      basicSalary: '30000', // Reset to fixed amount
       allowances: '',
       taxPercentage: '',
       loanInstallments: ''
@@ -449,7 +448,7 @@ export default function StaffDesignerSalaries() {
                 </div>
 
                 <div className="form-group">
-                  <label>Month * (Current + 2 previous months only)</label>
+                  <label>Month * </label>
                   <select
                     name="month"
                     value={formData.month}
@@ -471,15 +470,11 @@ export default function StaffDesignerSalaries() {
               </div>
 
               <div className="form-group">
-                <label>Basic Salary * (Max: Rs. 200,000)</label>
-                <input
-                  type="text"
-                  name="basicSalary"
-                  value={formData.basicSalary}
-                  onChange={handleInputChange}
-                  placeholder="Enter basic salary"
-                  required
-                />
+                <label>Basic Salary (Fixed)</label>
+                <div className="fixed-salary-display">
+                  Rs. 30,000
+                </div>
+                
               </div>
 
               <div className="form-group">

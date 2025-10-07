@@ -340,30 +340,6 @@ const CustomizeDesign = () => {
           </div>
         </div>
         
-        {/* Price Display Section */}
-        {totalPrice > 0 && (
-          <div className="form-section price-section">
-            <h2 className="section-title">Pricing</h2>
-            <div className="price-display">
-              <div className="price-breakdown">
-                <span className="price-label">
-                  {formData.material && formData.material.replace('_', ' ').toUpperCase()} 
-                  ({formData.boardThickness})
-                </span>
-                <span className="price-amount">Rs. {totalPrice.toLocaleString()}</span>
-              </div>
-              <div className="price-breakdown">
-                <span className="price-label">Delivery Fee</span>
-                <span className="price-amount">Rs. 250</span>
-              </div>
-              <div className="total-price">
-                <span className="total-label">Total Price:</span>
-                <span className="total-amount">Rs. {(totalPrice + 250).toLocaleString()}</span>
-              </div>
-            </div>
-          </div>
-        )}
-        
         <div className="form-section">
           <h2 className="section-title">Upload Your Design</h2>
           <div className="form-row upload-section">
@@ -439,6 +415,30 @@ const CustomizeDesign = () => {
             </div>
           </div>
         </div>
+        
+        {/* Price Display Section - Show after image upload and below additional information */}
+        {imagePreview && totalPrice > 0 && (
+          <div className="form-section price-section">
+            <h2 className="section-title">Pricing</h2>
+            <div className="price-display">
+              <div className="price-breakdown">
+                <span className="price-label">
+                  {formData.material && formData.material.replace('_', ' ').toUpperCase()} 
+                  ({formData.boardThickness})
+                </span>
+                <span className="price-amount">Rs. {totalPrice.toLocaleString()}</span>
+              </div>
+              <div className="price-breakdown">
+                <span className="price-label">Delivery Fee</span>
+                <span className="price-amount">Rs. 250</span>
+              </div>
+              <div className="total-price">
+                <span className="total-label">Total Price:</span>
+                <span className="total-amount">Rs. {(totalPrice + 250).toLocaleString()}</span>
+              </div>
+            </div>
+          </div>
+        )}
         
         <div className="form-row submit-row">
           <button type="submit" className="submit-btn" disabled={totalPrice === 0}>
